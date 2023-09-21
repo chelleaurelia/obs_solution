@@ -1,0 +1,111 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<title>OBS Solution</title>  
+<link rel="stylesheet" type="text/css" href="welcome.css"></link>
+<script src="script.js"></script>
+</head>  
+<body>  
+	<table>
+		<tr>
+		<th class="tableHeader">Department</th>
+		<th class="tableHeader">Student ID</td>
+		<th class="tableHeader">Marks</td>
+		<th class="tableHeader">Pass %</td>
+		<tr>
+		
+		<tr>
+		<th rowspan=4>Dep 1</th>
+		<td>
+			<div class="popUp" onClick="popUpFunction()">
+				S1
+				<span class=popUpText id="popUpContent">Anetta</span>
+			</div>
+		</td>
+		<td value="35" class="studentScore1">35</td>
+		<td rowspan=4>
+			<span value="0" id="dep1Percentage"> </span>
+		</td>
+		</tr>
+		<tr>
+		<td>
+			<div class="popUp" onClick="popUpFunction2()">
+				S2
+				<span class=popUpText id="popUpContent2">Belinda</span>
+			</div>
+		</td>
+		<td value="70" class="studentScore1">70</td>
+		</tr>
+		<tr>
+		<td>
+			<div class="popUp" onClick="popUpFunction3()">
+				S3
+				<span class=popUpText id="popUpContent3">Charlie</span>
+			</div>
+		</td>
+		<td value="60" class="studentScore1">60</td>
+		</tr>
+		<tr>
+		<td>
+			<div class="popUp" onClick="popUpFunction4()">
+				S4
+				<span class=popUpText id="popUpContent4">Donald</span>
+			</div>
+		</td>
+		<td value="90" class="studentScore1">90</td>
+		</tr>
+		<tr>
+		
+		<tr>
+		<th>Dep 2</th>
+		<td>
+			<div class="popUp" onClick="popUpFunction5()">
+				S5
+				<span class=popUpText id="popUpContent5">Eric</span>
+			</div>
+		</td>
+		<td value="30" class="studentScore2">30</td>
+		<td>
+			<span value="0" id="dep2Percentage"> </span>
+		</td>
+		</tr>
+		
+		<tr>
+		<th rowspan=3>Dep 3</th>
+		<td>
+			<div class="popUp" onClick="popUpFunction6()">
+				S6
+				<span class=popUpText id="popUpContent6">Francesca</span>
+			</div>
+		</td>
+		<td value="32" class="studentScore3">32</td>
+		<td rowspan=3>
+			<span value="0" id="dep3Percentage"></span>
+		</td>
+		</tr>
+		<tr>
+		<td>
+			<div class="popUp" onClick="popUpFunction7()">
+				S7
+				<span class=popUpText id="popUpContent7">Gerald</span>
+			</div>
+		</td>
+		<td value ="70" class="studentScore3">70</td>
+		</tr>
+		<tr>
+		<td>
+			<div class="popUp" onClick="popUpFunction8()">
+				S8
+				<span class=popUpText id="popUpContent8">Hanni</span>
+			</div>
+		</td>
+		<td value="20" class="studentScore3">20</td>
+		</tr>
+	</table>
+	<br></br>
+	<button class="generateButton" onClick="calculatePassPercentageDepOne(); calculatePassPercentageDepTwo(); calculatePassPercentageDepThree();">Generate Passing Percentage</button>
+	<button class="logoutButton">
+		<a href="home.html">Logout</a>
+	</button>
+</body>  
+</html> 

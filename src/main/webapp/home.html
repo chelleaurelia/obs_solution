@@ -1,0 +1,34 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<title>First Web Application</title>  
+<link rel="stylesheet" type="text/css" href="home.css"></link>
+<script>
+	function enableButton(inputName, inputPassword) {
+		var buttonSubmit = document.getElementById("buttonSubmit");
+
+		if (inputName.value.trim() != "" && inputPassword.value != "") {
+			buttonSubmit.disabled = false;
+		}
+	}
+</script>
+</head>  
+<body>  
+	<form>
+		<div class="name">
+		User ID 	
+		<input type="text" id="inputName" onkeyup="enableButton(this)">
+		</div>
+		<br>
+		<div class="password">
+		Password
+		<input type="text" id="inputPassword" onkeyup="enableButton(this)">
+		</div>
+		<br>
+		<a href="welcome.html">
+			<input id="buttonSubmit" type="button" value="Submit"></input>
+		</a>
+	</form>
+	
+</body>  
+</html> 

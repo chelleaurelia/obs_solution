@@ -1,0 +1,12 @@
+
+body {
+	text-align: center;
+}
+
+form {
+	margin-top: 300px;
+	display: inline-block;
+}
+button:disabled {
+	cursor:  not-allowed;
+}

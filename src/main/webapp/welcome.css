@@ -1,0 +1,89 @@
+table, tr, td, th {
+	border-width:  1 px;
+	border-color: black;
+	border-style: solid;
+}
+
+table {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	border-collapse: collapse;
+	margin-top: 150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tableHeader {
+	background-color: pink;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: center;
+	font-weight: bold;
+	width: 250px;
+}
+
+.generateButton {
+	margin: auto;
+	display: flex;
+
+}
+
+.logoutButton {
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+
+}
+
+.popUp {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popUp .popUpText {
+	visibility: hidden;
+	width: 160px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -80px;
+}
+
+.popUp .popUpText::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+.popUp .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
